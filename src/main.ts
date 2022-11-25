@@ -10,7 +10,7 @@ async function greet() {
             text: text,
         });
 }
-await appWindow.onFocusChanged(async ({ payload: focused }) => {
+appWindow.onFocusChanged(async ({ payload: focused }) => {
     console.log("Focus changed, window is focused? " + focused);
     greet();
     ink_reset();
