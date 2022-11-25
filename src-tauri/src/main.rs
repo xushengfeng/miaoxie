@@ -3,10 +3,15 @@
     windows_subsystem = "windows"
 )]
 
+use enigo::{Enigo, KeyboardControllable};
+
 // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
 #[tauri::command]
 fn greet(text: &str) {
     println!("{}", text);
+
+    let mut enigo = Enigo::new();
+    enigo.key_sequence(text);
 }
 
 fn main() {
