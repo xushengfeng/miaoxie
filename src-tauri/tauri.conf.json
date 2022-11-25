@@ -19,7 +19,9 @@
       "category": "DeveloperTool",
       "copyright": "",
       "deb": {
-        "depends": []
+        "depends": [
+          "libxdo-dev"
+        ]
       },
       "externalBin": [],
       "icon": [
